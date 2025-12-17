@@ -1,0 +1,438 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{WWW:MenschlicherEinflussKlima}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=85fa1192786058745aba99bc30809cc7}{%
+           family={Beuermann},
+           familyi={B\bibinitperiod},
+           given={Christiane},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=98d9cad9f96ea02de26a4af821d29e33}{%
+           family={{Bundeszentrale für politische Bildung}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{85fa1192786058745aba99bc30809cc7}
+      \strng{fullhash}{85fa1192786058745aba99bc30809cc7}
+      \strng{fullhashraw}{85fa1192786058745aba99bc30809cc7}
+      \strng{bibnamehash}{85fa1192786058745aba99bc30809cc7}
+      \strng{authorbibnamehash}{85fa1192786058745aba99bc30809cc7}
+      \strng{authornamehash}{85fa1192786058745aba99bc30809cc7}
+      \strng{authorfullhash}{85fa1192786058745aba99bc30809cc7}
+      \strng{authorfullhashraw}{85fa1192786058745aba99bc30809cc7}
+      \strng{editorbibnamehash}{98d9cad9f96ea02de26a4af821d29e33}
+      \strng{editornamehash}{98d9cad9f96ea02de26a4af821d29e33}
+      \strng{editorfullhash}{98d9cad9f96ea02de26a4af821d29e33}
+      \strng{editorfullhashraw}{98d9cad9f96ea02de26a4af821d29e33}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Die Entdeckung des menschlichen Einflusses auf das Klima}
+      \field{urlday}{14}
+      \field{urlmonth}{7}
+      \field{urlyear}{2021}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.bpb.de/gesellschaft/umwelt/klimawandel/38444/entdeckung-des-menschlichen-einflusses
+      \endverb
+      \verb{url}
+      \verb https://www.bpb.de/gesellschaft/umwelt/klimawandel/38444/entdeckung-des-menschlichen-einflusses
+      \endverb
+    \endentry
+    \entry{Norm:ISO690:2021}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=1c319bac8e45a44ce6bd8cb3642caa1e}{%
+           family={{ISO 690:2021}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{1c319bac8e45a44ce6bd8cb3642caa1e}
+      \strng{fullhash}{1c319bac8e45a44ce6bd8cb3642caa1e}
+      \strng{fullhashraw}{1c319bac8e45a44ce6bd8cb3642caa1e}
+      \strng{bibnamehash}{1c319bac8e45a44ce6bd8cb3642caa1e}
+      \strng{authorbibnamehash}{1c319bac8e45a44ce6bd8cb3642caa1e}
+      \strng{authornamehash}{1c319bac8e45a44ce6bd8cb3642caa1e}
+      \strng{authorfullhash}{1c319bac8e45a44ce6bd8cb3642caa1e}
+      \strng{authorfullhashraw}{1c319bac8e45a44ce6bd8cb3642caa1e}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Information and documentation -- Guidelines for bibliographic references and citations to information resources}
+      \true{nocite}
+    \endentry
+    \entry{Karmasin:GestaltungWissenschaftlicherArbeiten}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=a1701ee78b136e928d00196a34eef068}{%
+           family={Karmasin},
+           familyi={K\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3933b2403eb4d4c0a768e6ea8146f440}{%
+           family={Ribing},
+           familyi={R\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Wien}%
+      }
+      \list{publisher}{1}{%
+        {facultas}%
+      }
+      \strng{namehash}{4a502ed8508df2be61396d5367f8bc56}
+      \strng{fullhash}{4a502ed8508df2be61396d5367f8bc56}
+      \strng{fullhashraw}{4a502ed8508df2be61396d5367f8bc56}
+      \strng{bibnamehash}{4a502ed8508df2be61396d5367f8bc56}
+      \strng{authorbibnamehash}{4a502ed8508df2be61396d5367f8bc56}
+      \strng{authornamehash}{4a502ed8508df2be61396d5367f8bc56}
+      \strng{authorfullhash}{4a502ed8508df2be61396d5367f8bc56}
+      \strng{authorfullhashraw}{4a502ed8508df2be61396d5367f8bc56}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{10. Aufl.}
+      \field{title}{Die Gestaltung wissenschaftlicher Arbeiten: Ein Leitfaden für Facharbeit/VWA, Seminararbeiten, Bachelor-, \mbox{Master-,} Magister- und Diplomarbeiten sowie Dissertationen.}
+      \field{year}{2019}
+      \true{nocite}
+    \endentry
+    \entry{Lehrndorfer:KontrollierteSprache}{inbook}{}{}
+      \name{author}{2}{}{%
+        {{hash=4e681b3a83878c5b35b650f5de36c426}{%
+           family={Lehrndorfer},
+           familyi={L\bibinitperiod},
+           given={Anne},
+           giveni={A\bibinitperiod}}}%
+        {{hash=58f6c3cb72b0cef54d520315f274afb1}{%
+           family={Reuther},
+           familyi={R\bibinitperiod},
+           given={Ursula},
+           giveni={U\bibinitperiod}}}%
+      }
+      \name{bookauthor}{1}{}{%
+        {{hash=3714bfe1aab9b0245e4a866ea387d927}{%
+           family={Muthig},
+           familyi={M\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Lübeck}%
+      }
+      \list{publisher}{1}{%
+        {Schmidt-Römhild}%
+      }
+      \strng{namehash}{9bec1b5422fb93a052c9a9c01b01e7be}
+      \strng{fullhash}{9bec1b5422fb93a052c9a9c01b01e7be}
+      \strng{fullhashraw}{9bec1b5422fb93a052c9a9c01b01e7be}
+      \strng{bibnamehash}{9bec1b5422fb93a052c9a9c01b01e7be}
+      \strng{authorbibnamehash}{9bec1b5422fb93a052c9a9c01b01e7be}
+      \strng{authornamehash}{9bec1b5422fb93a052c9a9c01b01e7be}
+      \strng{authorfullhash}{9bec1b5422fb93a052c9a9c01b01e7be}
+      \strng{authorfullhashraw}{9bec1b5422fb93a052c9a9c01b01e7be}
+      \strng{bookauthorbibnamehash}{3714bfe1aab9b0245e4a866ea387d927}
+      \strng{bookauthornamehash}{3714bfe1aab9b0245e4a866ea387d927}
+      \strng{bookauthorfullhash}{3714bfe1aab9b0245e4a866ea387d927}
+      \strng{bookauthorfullhashraw}{3714bfe1aab9b0245e4a866ea387d927}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Standardisierungsmethoden für die Technische Dokumentation}
+      \field{title}{Kontrollierte Sprache – standardisierte Sprache?}
+      \field{year}{2008}
+      \true{nocite}
+      \field{pages}{97\bibrangedash 121}
+      \range{pages}{25}
+    \endentry
+    \entry{Meier:Globalisierung}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=e73b9d422dad3fd82c94260cda69f8cf}{%
+           family={Meier},
+           familyi={M\bibinitperiod},
+           given={Johann},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Wiesbaden}%
+      }
+      \list{publisher}{1}{%
+        {Pons}%
+      }
+      \strng{namehash}{e73b9d422dad3fd82c94260cda69f8cf}
+      \strng{fullhash}{e73b9d422dad3fd82c94260cda69f8cf}
+      \strng{fullhashraw}{e73b9d422dad3fd82c94260cda69f8cf}
+      \strng{bibnamehash}{e73b9d422dad3fd82c94260cda69f8cf}
+      \strng{authorbibnamehash}{e73b9d422dad3fd82c94260cda69f8cf}
+      \strng{authornamehash}{e73b9d422dad3fd82c94260cda69f8cf}
+      \strng{authorfullhash}{e73b9d422dad3fd82c94260cda69f8cf}
+      \strng{authorfullhashraw}{e73b9d422dad3fd82c94260cda69f8cf}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Globalisierung}
+      \field{year}{2011}
+      \true{nocite}
+    \endentry
+    \entry{Mueller:Meier}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=0f28769a8b8040410f509311761e059f}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Evelyne},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e73b9d422dad3fd82c94260cda69f8cf}{%
+           family={Meier},
+           familyi={M\bibinitperiod},
+           given={Johann},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Wiesbaden}%
+      }
+      \list{publisher}{1}{%
+        {Pons}%
+      }
+      \strng{namehash}{6bf921593a81e7c5b7b05fc5a04477f7}
+      \strng{fullhash}{6bf921593a81e7c5b7b05fc5a04477f7}
+      \strng{fullhashraw}{6bf921593a81e7c5b7b05fc5a04477f7}
+      \strng{bibnamehash}{6bf921593a81e7c5b7b05fc5a04477f7}
+      \strng{authorbibnamehash}{6bf921593a81e7c5b7b05fc5a04477f7}
+      \strng{authornamehash}{6bf921593a81e7c5b7b05fc5a04477f7}
+      \strng{authorfullhash}{6bf921593a81e7c5b7b05fc5a04477f7}
+      \strng{authorfullhashraw}{6bf921593a81e7c5b7b05fc5a04477f7}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Globalisierung neu gedacht.}
+      \field{year}{2019}
+      \true{nocite}
+    \endentry
+    \entry{Mueller:Meier:Huber}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=0f28769a8b8040410f509311761e059f}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Evelyne},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e73b9d422dad3fd82c94260cda69f8cf}{%
+           family={Meier},
+           familyi={M\bibinitperiod},
+           given={Johann},
+           giveni={J\bibinitperiod}}}%
+        {{hash=404b99624a5f9d03207edcae3e4249a9}{%
+           family={Huber},
+           familyi={H\bibinitperiod},
+           given={Anneliese},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Wiesbaden}%
+      }
+      \list{publisher}{1}{%
+        {Pons}%
+      }
+      \strng{namehash}{a65158ef8cce929443316209b173fb0c}
+      \strng{fullhash}{a65158ef8cce929443316209b173fb0c}
+      \strng{fullhashraw}{a65158ef8cce929443316209b173fb0c}
+      \strng{bibnamehash}{a65158ef8cce929443316209b173fb0c}
+      \strng{authorbibnamehash}{a65158ef8cce929443316209b173fb0c}
+      \strng{authornamehash}{a65158ef8cce929443316209b173fb0c}
+      \strng{authorfullhash}{a65158ef8cce929443316209b173fb0c}
+      \strng{authorfullhashraw}{a65158ef8cce929443316209b173fb0c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Globalisierung: Rahmenbedingungen, Prozesse, Institutionen.}
+      \field{year}{2021}
+      \true{nocite}
+    \endentry
+    \entry{Mueller:Meier:Huber:Tausch}{book}{}{}
+      \name{author}{4}{}{%
+        {{hash=0f28769a8b8040410f509311761e059f}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Evelyne},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e73b9d422dad3fd82c94260cda69f8cf}{%
+           family={Meier},
+           familyi={M\bibinitperiod},
+           given={Johann},
+           giveni={J\bibinitperiod}}}%
+        {{hash=404b99624a5f9d03207edcae3e4249a9}{%
+           family={Huber},
+           familyi={H\bibinitperiod},
+           given={Anneliese},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1cf28055c2d0351be9bc0b6c07a84bdd}{%
+           family={Tausch},
+           familyi={T\bibinitperiod},
+           given={Gustav},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Wiesbaden}%
+      }
+      \list{publisher}{1}{%
+        {Pons}%
+      }
+      \strng{namehash}{4d88e6f1ce91ab50bdf917d70a41a8eb}
+      \strng{fullhash}{22181bd7dc340931389f88b6c771c34e}
+      \strng{fullhashraw}{22181bd7dc340931389f88b6c771c34e}
+      \strng{bibnamehash}{22181bd7dc340931389f88b6c771c34e}
+      \strng{authorbibnamehash}{22181bd7dc340931389f88b6c771c34e}
+      \strng{authornamehash}{4d88e6f1ce91ab50bdf917d70a41a8eb}
+      \strng{authorfullhash}{22181bd7dc340931389f88b6c771c34e}
+      \strng{authorfullhashraw}{22181bd7dc340931389f88b6c771c34e}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Globalisierung: Gegenwart und Zukunft.}
+      \field{year}{2016}
+      \true{nocite}
+    \endentry
+    \entry{Norm:OENORMA2662:2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=81d0a8b0911f3e8f208659dde93967fa}{%
+           family={{ÖNORM A 2662:2023}},
+           familyi={Ö\bibinitperiod}}}%
+      }
+      \strng{namehash}{81d0a8b0911f3e8f208659dde93967fa}
+      \strng{fullhash}{81d0a8b0911f3e8f208659dde93967fa}
+      \strng{fullhashraw}{81d0a8b0911f3e8f208659dde93967fa}
+      \strng{bibnamehash}{81d0a8b0911f3e8f208659dde93967fa}
+      \strng{authorbibnamehash}{81d0a8b0911f3e8f208659dde93967fa}
+      \strng{authornamehash}{81d0a8b0911f3e8f208659dde93967fa}
+      \strng{authorfullhash}{81d0a8b0911f3e8f208659dde93967fa}
+      \strng{authorfullhashraw}{81d0a8b0911f3e8f208659dde93967fa}
+      \field{sortinit}{Ö}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Wissenschaftliche Abschlussarbeiten – Angaben für den bibliographischen Nachweis.}
+      \true{nocite}
+    \endentry
+    \entry{Norm:ONR12658:2013}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=5c81ea415b46ff7898bf24b26e9a8013}{%
+           family={{ONR 12658:2013}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{5c81ea415b46ff7898bf24b26e9a8013}
+      \strng{fullhash}{5c81ea415b46ff7898bf24b26e9a8013}
+      \strng{fullhashraw}{5c81ea415b46ff7898bf24b26e9a8013}
+      \strng{bibnamehash}{5c81ea415b46ff7898bf24b26e9a8013}
+      \strng{authorbibnamehash}{5c81ea415b46ff7898bf24b26e9a8013}
+      \strng{authornamehash}{5c81ea415b46ff7898bf24b26e9a8013}
+      \strng{authorfullhash}{5c81ea415b46ff7898bf24b26e9a8013}
+      \strng{authorfullhashraw}{5c81ea415b46ff7898bf24b26e9a8013}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Empfehlungen zum Zitieren von Informationsquellen und Anleitungen zur Gestaltung von Literatur- und anderen Quellennachweisen in wissenschaftlichen Arbeiten.}
+      \true{nocite}
+    \endentry
+    \entry{OpenAI:2023}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=c6371738c069d063d00af5fed174ab83}{%
+           family={{OpenAI}},
+           familyi={O\bibinitperiod},
+           given={Hrsg.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=cdfb6ebff9d8cc51d663d1772a75282b}{%
+           family={{Antwort auf die Prompt-Eingabe der Autorin/des Autors „xyz“}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{c6371738c069d063d00af5fed174ab83}
+      \strng{fullhash}{c6371738c069d063d00af5fed174ab83}
+      \strng{fullhashraw}{c6371738c069d063d00af5fed174ab83}
+      \strng{bibnamehash}{c6371738c069d063d00af5fed174ab83}
+      \strng{authorbibnamehash}{c6371738c069d063d00af5fed174ab83}
+      \strng{authornamehash}{c6371738c069d063d00af5fed174ab83}
+      \strng{authorfullhash}{c6371738c069d063d00af5fed174ab83}
+      \strng{authorfullhashraw}{c6371738c069d063d00af5fed174ab83}
+      \strng{editorbibnamehash}{cdfb6ebff9d8cc51d663d1772a75282b}
+      \strng{editornamehash}{cdfb6ebff9d8cc51d663d1772a75282b}
+      \strng{editorfullhash}{cdfb6ebff9d8cc51d663d1772a75282b}
+      \strng{editorfullhashraw}{cdfb6ebff9d8cc51d663d1772a75282b}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ChatGPT, Version xy (Sprachmodell).}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://chat.openai.com/
+      \endverb
+      \verb{url}
+      \verb https://chat.openai.com/
+      \endverb
+    \endentry
+    \entry{Schulz:NormPraxis}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=b761c52a49ffe8cc1675743e502c9637}{%
+           family={Schulz},
+           familyi={S\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b761c52a49ffe8cc1675743e502c9637}
+      \strng{fullhash}{b761c52a49ffe8cc1675743e502c9637}
+      \strng{fullhashraw}{b761c52a49ffe8cc1675743e502c9637}
+      \strng{bibnamehash}{b761c52a49ffe8cc1675743e502c9637}
+      \strng{authorbibnamehash}{b761c52a49ffe8cc1675743e502c9637}
+      \strng{authornamehash}{b761c52a49ffe8cc1675743e502c9637}
+      \strng{authorfullhash}{b761c52a49ffe8cc1675743e502c9637}
+      \strng{authorfullhashraw}{b761c52a49ffe8cc1675743e502c9637}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{technische kommunikation}
+      \field{number}{6}
+      \field{title}{Doku-Norm in der Praxis}
+      \field{volume}{36}
+      \field{year}{2014}
+      \true{nocite}
+      \field{pages}{46\bibrangedash 49}
+      \range{pages}{4}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

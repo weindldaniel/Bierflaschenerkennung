@@ -1,0 +1,170 @@
+%%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%%            INFORMATION
+%%============================================================================
+%%            Version
+%%----------------------------------------------------------------------------
+\def\CurrentVersionMain{\textit{V2.0}}
+%%============================================================================
+%%            Dokumentenklasse und Präambel
+%%----------------------------------------------------------------------------
+\documentclass[12pt,a4paper,oneside,bibliography=totocnumbered,toc=listofnumbered]{scrbook}
+\usepackage[english,ngerman,naustrian]{babel}
+\usepackage{./packages/WissensArbeitenFHWels}
+\usepackage{./packages/WissensArbeitenFHWels-FrontseitenDE}     
+%%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%%
+%%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%%            DATEN/EINSTELLUNGEN für die WISSENSCHAFTLICHE ARBEIT
+%%============================================================================
+%%            Daten für die Arbeit
+%%----------------------------------------------------------------------------
+%% Titel der Arbeit:
+\title{Bierflaschenerkennung}
+%%
+%% Autor der Arbeit:
+\author{Peböck Thomas - Weindl Daniel}
+%%
+%% Studiengang:
+\studiengang{Automatisierungstechnik}
+%%
+%% Typ des Dokuments:
+\typDokument{Projektbericht}
+% -) "Bachelorarbeit"
+% -) "Masterarbeit"
+% -) "Projektbericht"
+%%
+%% Art des Studiengangs:
+\artStudiengang{Bachelorstudiengang}
+% -) "Bachelorstudiengang"
+% -) "Masterstudiengang"
+%%
+%% Zu erlangender akademischer Grad:
+\akademGrad{Bachelor of Science in Engineering (BSc)}
+% -) "Bachelor of Science in Engineering (BSc)"
+% -) "Master of Science in Engineering (MSc)"
+% -) "Diplom-Ingenieurin für technisch-wissenschaftliche Berufe (Dipl.-Ing.)"
+% -) "Diplom-Ingenieur für technisch-wissenschaftliche Berufe (Dipl.-Ing.)"
+%%
+%% Ort der Fakultät:
+\studienort{Wels}
+%%
+%% Abgabemonat und Jahr:
+\abgabemonat{Jänner}
+\abgabejahr{2026}
+%%
+%% Betreuer der Arbeit:
+\betreuer{Dr. Gerald Zauner}
+%%
+%% Stichwörter für die Arbeit:
+%% (werden in die Metadaten des PDF's geschrieben)
+\stichwoerter{Stichwort 1, Stichwort 2 Stichwort 3...}
+%%
+%% Unterschrift anzeigen: (ACHTUNG: Syntax wichtig!!!)
+\ShowSignature{0mm}{22mm}{0.5}{No}		% Zeigt die Unterschrift auf der Eidest. Erklärung
+% Syntax: {x-Position}{y-Position}{Skalierungsfaktor}{'Anzeigen:' Yes / No}
+% Beispiel: \ShowSignature{0mm}{22mm}{0.5}{Yes}
+% Datei mit dem Namen "Signature.png" muss im Grafik-Ordner vorhanden sein.
+%%
+%%	Eingefärbung der Links festlegen: (ACHTUNG: Syntax wichtig!!!)
+\ColoredLinks{No}		% Eingefärbet Links(Abbildung, URL's, Literatur)
+% Syntax: Yes / No
+%%
+%%============================================================================
+%%            Einstellungen:
+%%----------------------------------------------------------------------------
+\Style{FHWels}				% Grundlegender Stil (nur 'FHWels' möglich)
+\BibStyle{FHWelsNumericBrackets}	% Zitier-Stil auf Basis von 'BibLatex'
+% Syntax:	-) FHWelsNumericBrackets (z.B.: [1])
+%			-) FHWelsAlphabeticBrackets (z.B. [Meier, 2011])
+\addbibresource{Bibliography.bib}	% Bibliography - Datei(en)
+\graphicspath{{./Grafik/}}	% Festlegung des Unterordners für Abbildungen
+\TabContent{1.4cm}			% Tabulatoreinrückung für das Inhaltsverzeichnis	
+%%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%%
+%%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%%            BEGINN der ARBEIT
+%%============================================================================
+\begin{document}
+\selectlanguage{naustrian}	% Deutsche Sprache (Österreichpaket)	
+%%============================================================================
+%%            Titelseite & Eidesstattliche Erklärung
+%%----------------------------------------------------------------------------
+%% Titelseite
+	\frontmatter				% römische Seitennummerierung				
+	\pagenumbering{Roman}		% Großbuchstaben
+	\titelseite
+%%	
+%%============================================================================
+%%            Vorwort & weitere Dokumente
+%%----------------------------------------------------------------------------
+% %% Vorwort, Kurzfassung/Abstract, Inhaltsverzeichnis
+% 	\begingroup
+% 		\pagestyle{plain}				%...keine Kopfzeile
+% 		\renewcommand{\chapterpagestyle}{plain}%
+% 		\include{Text/0001-Vorwort}
+% 		\pagestyle{plain}
+% 		\eidesErklaerung
+% 		\clearpage
+% 	\endgroup
+
+	
+	\begingroup
+		\pagestyle{plain}
+		% \include{Text/0002-Kurzfassung}
+		% \include{Text/0003-Abstract}
+		%
+		% Inhaltsverzeichnis:
+		\tableofcontents
+		\clearpage
+	\endgroup
+%%	
+%%============================================================================
+%%            Hauptteil der Arbeit
+%%----------------------------------------------------------------------------
+	\mainmatter					% arabische Seitennummierierung
+	\clearpage
+%%----------------------------------------------------------------------------
+%% Einleitung	
+	\input{Text/0101-Einleitung}
+%%----------------------------------------------------------------------------
+%% Hauptkapitel 1
+	\input{Text/0201-Hauptkapitel01}
+%%----------------------------------------------------------------------------
+%% Hauptkapitel 2
+	\input{Text/0301-Hauptkapitel02}
+%%----------------------------------------------------------------------------
+%% Zusammenfassung
+% 	\input{Text/0501-Zusammenfassung}
+% %%----------------------------------------------------------------------------
+% %% Abkürzungsverzeichnis[optional]
+% 	\clearpage
+% 	\input{Text/9001-Abkuerzungen}
+% %%----------------------------------------------------------------------------
+% 	%% Fachwortverzeichnis[optional]
+% 	\clearpage
+% 	\input{Text/9002-Fachwortverzeichnis}
+% %%----------------------------------------------------------------------------
+% %% Abbildungsverzeichnis [optional]
+% 	\clearpage
+% 	\input{Text/9003-Abbildungsverzeichnis}
+% %%----------------------------------------------------------------------------
+% %% Tabellenverzeichnis [optional]
+% 	\clearpage
+% 	\input{Text/9004-Tabellenverzeichnis}
+% %%----------------------------------------------------------------------------
+% %% Formelverzeichnis [optional]
+% 	\clearpage
+% 	\input{Text/9005-Formelverzeichnis}
+% %%----------------------------------------------------------------------------
+% %% Literaturverzeichnis
+% 	\clearpage
+% 	\input{Text/9006-Literaturverzeichnis}
+% %%----------------------------------------------------------------------------
+% 	%% Anhang[optional]
+% 	\input{Text/9010-Anhang}
+%%----------------------------------------------------------------------------
+%% Messbox zur Druckkontrolle
+% 	\input{Text/9999-Messbox}
+%%============================================================================	
+\end{document}
+%%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
