@@ -116,7 +116,7 @@ def apply_convex_hull(binary_img):
 # ------------------------------------------------------------
 # 8. KREISERKENNUNG
 # ------------------------------------------------------------
-def detect_circles(binary_img, min_r=40, max_r=80):
+def detect_circles(binary_img, min_r, max_r):
     blurred = cv2.medianBlur(binary_img, 5)
     circles = cv2.HoughCircles(
         blurred,
@@ -147,50 +147,92 @@ cap = open_camera_full_reset(0)
 
 cv2.namedWindow("Live Adjustment", cv2.WINDOW_NORMAL)
 
-# Trackbars erstellen
+# Trackbars erstellen um die Werte vom VisionAssistant nachzubilden
 cv2.createTrackbar("Brightness", "Live Adjustment", 3, 255, nothing)
 cv2.createTrackbar("Contrast", "Live Adjustment", 1, 89, nothing)
 cv2.createTrackbar("Gamma", "Live Adjustment", int(0.3*100), int(10*100), nothing)
-cv2.createTrackbar("Threshold", "Live Adjustment", 135, 255, nothing)
-cv2.createTrackbar("Morph Size", "Live Adjustment", 21, 100, nothing)
+cv2.createTrackbar("Threshold", "Live Adjustment", 243, 255, nothing)
+#---
+cv2.createTrackbar("MinArea", "Live Adjustment", 7000, 50000, nothing)
+cv2.createTrackbar("MaxArea", "Live Adjustment", 32000, 50000, nothing)
+#--
+cv2.createTrackbar("minR", "Live Adjustment", 40, 200, nothing)
+cv2.createTrackbar("maxR", "Live Adjustment", 105, 200, nothing)
+#---
+
 
 while True:
     ret, frame = cap.read()
     if not ret:
         break
 
-    # Trackbar-Werte lesen
+    # live Trackbar-Werte einlesen
     brightness = cv2.getTrackbarPos("Brightness", "Live Adjustment")
     contrast = cv2.getTrackbarPos("Contrast", "Live Adjustment")
     gamma = cv2.getTrackbarPos("Gamma", "Live Adjustment") / 100.0
     thresh_value = cv2.getTrackbarPos("Threshold", "Live Adjustment")
-    #morph_size = cv2.getTrackbarPos("Morph Size", "Live Adjustment")
-    #morph_size = max(1, morph_size)  # Kernel darf nicht 0 sein
-
-    # --------------------- Anpassung --------------------------
+    #---
+    min_area = cv2.getTrackbarPos("MinArea", "Live Adjustment")
+    max_area = cv2.getTrackbarPos("MaxArea", "Live Adjustment")
+    #---
+    minR = cv2.getTrackbarPos("minR", "Live Adjustment")
+    maxR = cv2.getTrackbarPos("maxR", "Live Adjustment")
+    
+    # --------------------- Filter Anwenden --------------------------
     adjusted = adjust_brightness_contrast_gamma(frame, brightness, contrast, gamma)
     green_channel = extract_green_channel(adjusted)
     binary = apply_threshold(green_channel, thresh_value)
-    area_filtered = filter_by_area(binary, min_area=7000, max_area=18000)
-    elongation_filtered = filter_by_elongation(area_filtered, min_elong=0, max_elong=3)
-    final_mask = apply_convex_hull(elongation_filtered)
-    
+    #---
+    area_filtered = filter_by_area(binary, min_area, max_area)
+    #elongation_filtered = filter_by_elongation(binary, min_elong=0, max_elong=3) # ist überflüssig weil Area-Filtern besser funktioniert als im VisonAssistant
+    final_mask = apply_convex_hull(area_filtered)
+        
     # --------------------- Kreiserkennung ---------------------
     display = frame.copy()
-    circles = detect_circles(final_mask)
+    
+    # Sicherstellen, dass Farbbild vorliegt
+    if len(display.shape) == 2:
+        display = cv2.cvtColor(display, cv2.COLOR_GRAY2BGR)
+    
+    circles = detect_circles(final_mask, minR, maxR)
+    
+    # Anzahl initialisieren
+    bottle_count = 0
+    
     if circles is not None:
         circles = np.uint16(np.around(circles))
-        for c in circles[0, :]:
-            cv2.circle(display, (c[0], c[1]), c[2], (0, 255, 0), 2)
-            cv2.circle(display, (c[0], c[1]), 2, (0, 0, 255), 3)
+        bottle_count = len(circles[0])
+    
+        for x, y, r in circles[0]:
+            # Roter Kreis
+            cv2.circle(display, (x, y), r, (0, 0, 255), 2)
+    
+            # Rotes X im Mittelpunkt
+            size = int(r * 0.15)
+            cv2.line(display, (x - size, y - size),
+                              (x + size, y + size), (0, 0, 255), 2)
+            cv2.line(display, (x - size, y + size),
+                              (x + size, y - size), (0, 0, 255), 2)
+    
+    # --------------------- Text Overlay ---------------------
+    text = f"Bierflaschen: {bottle_count}"
+    
+    cv2.putText(
+        display,
+        text,
+        (30, 60),                       # Position
+        cv2.FONT_HERSHEY_SIMPLEX,
+        1.6,                            # Schriftgröße
+        (0, 0, 255),                    # Rot
+        3,                              # Linienstärke
+        cv2.LINE_AA
+    )
+
 
     # --------------------- Anzeigen ---------------------------
-    cv2.imshow("Live Adjustment", green_channel)
-    cv2.imshow("Binary", binary)
-    cv2.imshow("Area-Filter", area_filtered)
-    cv2.imshow("Elongation-Factor", elongation_filtered)
-    cv2.imshow("Convexe Hülle", final_mask)
-    #cv2.imshow("Detected Circles", display)
+    cv2.imshow("Live Adjustment", final_mask)
+    cv2.imshow("Kreisdetektion", display)
+
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
