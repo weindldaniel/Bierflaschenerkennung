@@ -2,3 +2,22 @@
 \label{sec: Einleitung}
 
 \section{Aufgabenstellung}
+Es soll mittels Kamera erkannt werden wieviel volle Bierflaschen sich in einer Bierkiste befinden.
+
+\section{Ziele}
+\begin{itemize}
+	\item Erkennung von vollen Bierflaschen anhand der Kapsel
+	\item Live - Erkennung
+	\item Die Bierkiste soll in einem definierten Bereich verschoben werden können
+	\item Anzahl der vollen Falschen visualisieren
+\end{itemize}
+
+\section{Nicht-Ziele}
+\begin{itemize}
+    \item Erkennung von leeren Bierflaschen
+\end{itemize}
+
+\section{Vorgehensweise}
+Die Erkennung der Flaschen soll über die Kapsel erfolgen, daher wollen wir versuchen das an der Kapsel reflektierte Licht zu Erkennen. 
+Wir werden zuerst mit dem NI Vision Assistant versuchen auf eine Lösung zu kommen. 
+Anschließend werden die gefundenen Filter mit openCV in Betrieb genommen. 
