@@ -12,6 +12,32 @@
 \usepackage{./packages/WissensArbeitenFHWels}
 \usepackage{./packages/WissensArbeitenFHWels-FrontseitenDE}    
 \usepackage{float} 
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+
+\lstset{
+    inputencoding=utf8,
+    extendedchars=true
+}
+
+\lstdefinestyle{pythonstyle}{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    stringstyle=\color{teal},
+    numbers=left,
+    numberstyle=\tiny,
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    tabsize=4,
+    captionpos=b
+}
+
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 %%
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
